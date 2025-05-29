@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Flappy Cinnamoroll</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="startScreen">
+      <div id="title">Flappy Cinnamoroll</div>
+      <button id="startBtn"></button>
+    </div>
+
+    <div id="tutorialScreen">
+      <h2>Tutorial</h2>
+      <p>Press Space or Click PgUp to make Cinnamoroll jump!</p>
+      <img id="tutorialImage" src="taptap.png" alt="Tutorial Image" />
+      <button id="tutorialBtn">Continue to Game</button>
+    </div>
+
+    <canvas id="gameCanvas"></canvas>
+    <div id="groundImage"></div>
+    <!-- Gambar ground untuk menutupi pipa -->
+
+    <div id="gameOverScreen">
+      <img
+        src="gameover.jpg"
+        alt="Game Over Image"
+        style="width: 100%; max-width: 300px"
+      />
+      <p>Your score: <span id="finalScore">0</span></p>
+      <div id="gameOverButtons">
+        <button
+          id="refreshBtn"
+          title="Play Again"
+          style="background-image: url('icon refresh.png')"
+        ></button>
+        <button
+          id="exitBtn"
+          title="Exit"
+          style="background-image: url('icon exit.png')"
+        ></button>
+      </div>
+    </div>
+
+    <script src="game.js"></script>
+  </body>
+</html>
